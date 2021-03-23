@@ -1,0 +1,9 @@
+.skills {
+    background-color: rgb(36, 32, 32);
+    color: white;
+}
+
+.skills ul li{
+    padding-right: 50px;
+    padding-bottom: 10px;
+}

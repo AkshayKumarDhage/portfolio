@@ -1,0 +1,33 @@
+.contact {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-details {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.zoom {
+    -webkit-transition: 0.5s all ease 0s;
+    -moz-transition: 0.5s all ease 0s;
+    -ms-transition: 0.5s all ease 0s;
+}
+  
+  .zoom:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.5s all ease 0s;
+    -webkit-transition: 0.5s all ease 0s;
+    -moz-transition: 0.5s all ease 0s;
+    -ms-transition: 0.5s all ease 0s;
+  }

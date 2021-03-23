@@ -1,0 +1,15 @@
+.Cards {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: -1px;
+}
+
+.Cards h3{
+    color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
