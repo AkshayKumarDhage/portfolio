@@ -1,20 +1,22 @@
-import image from '../images/sample3.jpg'
+// import image from '../images/sample3.jpg'
 import './Card.css'
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Aos from 'aos';
 
-const Card = () => {
+const Card = (props) => {
     useEffect(()=>{
         Aos.init({duration: 1000});
     }, []);
-
+    
     return (
         <>
         <div className="card">
-            <img src={image} className="card-img-top img-fluid card-img" alt="..." />
-            <div className="card-body">
-                <p data-aos="zoom-in" className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <img src={props.project.image} className="card-img-top img-fluid card-img" alt="..." />
+            <div data-aos="zoom-in" className="card-body">
+                <h5 className="card-text">{props.project.title}</h5>
+                <p className="card-text">{props.project.tech}</p>
+                <button type="button" className="btn"><a target="_blank"  href={props.project.link}>View</a></button>
             </div>
         </div>
         </>

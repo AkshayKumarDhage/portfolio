@@ -1,5 +1,6 @@
 import video1 from '../videos/video-2.mp4'
 import './Header.css';
+import {resumeLink} from './Data';
 
 const Header = () => {
     return (
@@ -14,7 +15,7 @@ const Header = () => {
                     <div >
                         <h1>I am Akshay Kumar Dhage</h1>
                         <h3>I am Software Engineer.</h3>
-                        <button class="btn bg-transparent"><a href="#">My Resume ➜</a></button>
+                        <button className="btn bg-transparent"><a target="_blank" href={resumeLink}>My Resume ➜</a></button>
                         <div className="scroll"> <i className="fas fa-chevron-down"></i>
                         </div>
                     </div>

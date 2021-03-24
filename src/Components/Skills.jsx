@@ -1,4 +1,5 @@
 import './Skills.css';
+import {skills} from './Data';
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Aos from 'aos';
@@ -15,24 +16,11 @@ const Skills = () => {
                 <div className="row justify-content-center mx-auto">
                     <div className="col-8 pb-5 d-flex justify-content-center">
                         <ul className="list-inline">
-                            <li data-aos="zoom-in" className="list-inline-item"> Python</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Java</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> C++</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> JavaScript</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> MySql</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Java Spring Boot</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Python Flask Framework</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> NodeJS</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> ReactJS</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> MongoDB</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Web Development</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Backend Development</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> RestAPI</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Machine Learning</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Data Structures</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Algorithms</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Object Oriented Programming</li>
-                            <li data-aos="zoom-in" className="list-inline-item"> Operating Systems</li>
+                            {
+                                skills.map((skill) => (
+                                    <li data-aos="zoom-in" className="list-inline-item"> {skill}</li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>

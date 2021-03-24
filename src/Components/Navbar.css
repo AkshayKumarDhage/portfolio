@@ -58,6 +58,9 @@ nav a{
         p {
             font-size: x-small;
         }
+        a {
+            font-size: small;
+        }
     }
     
     @media all and (max-device-width: 320px){
@@ -72,5 +75,8 @@ nav a{
         }
         p {
             font-size: x-small;
+        }
+        a {
+            font-size: small;
         }
     }

@@ -1,4 +1,5 @@
 import './Contact.css';
+import {contact} from './Data';
 import whatsapp from '../images/whatsapp2.png'
 import mail from '../images/gmail.png';
 import linkedin from '../images/linkedin.png'
@@ -22,7 +23,7 @@ const Contact = () => {
                             <img src={whatsapp} className="icon"></img>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <p >Whatsapp: +919900990099</p>
+                            <p >Whatsapp: {contact.phone}</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className="col-md-3 col-10">
@@ -30,7 +31,7 @@ const Contact = () => {
                             <img src={mail} className="icon"></img>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <p >Mail: ay1234567@gmail.com</p>
+                            <p >Mail: {contact.email}</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className="col-md-3 col-10">
@@ -38,7 +39,7 @@ const Contact = () => {
                             <img src={linkedin} className="icon"></img>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <p>Linkedin: Linkedin.com/in/ay</p>
+                        <p><a target="_blank" href={contact.linkedin}>LinkedIn ➜</a></p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className="col-md-3 col-10">
@@ -46,7 +47,7 @@ const Contact = () => {
                             <img src={github} className="icon"></img>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <p>Github: github.com/ay</p>
+                            <p><a target="_blank" href={contact.github}>Github ➜</a></p>
                         </div>
                     </div>
                 </div>
